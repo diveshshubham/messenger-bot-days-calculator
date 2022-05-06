@@ -66,10 +66,17 @@ module.exports = {
                 [
                     {
                         '$lookup': {
-                            'from': 'message',
-                            'localField': 'PSID',
-                            'foreignField': 'PSID',
+                            'from': 'message', 
+                            'localField': 'PSID', 
+                            'foreignField': 'PSID', 
                             'as': 'messages'
+                        }
+                    }, {
+                        '$project': {
+                            'userName': 1, 
+                            'DOB': 1, 
+                            'createdAt': 1, 
+                            'messages': 1
                         }
                     }
                 ]
@@ -88,14 +95,21 @@ module.exports = {
                 [
                     {
                         '$match': {
-                            'PSID': '' + PSID + ''
+                            'PSID': ''+PSID+''
                         }
                     }, {
                         '$lookup': {
-                            'from': 'message',
-                            'localField': 'PSID',
-                            'foreignField': 'PSID',
+                            'from': 'message', 
+                            'localField': 'PSID', 
+                            'foreignField': 'PSID', 
                             'as': 'messages'
+                        }
+                    }, {
+                        '$project': {
+                            'userName': 1, 
+                            'DOB': 1, 
+                            'createdAt': 1, 
+                            'messages': 1
                         }
                     }
                 ]
