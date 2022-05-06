@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Days Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <h1>This bot will tell you number of days left for your upcoming next birthday 🎂 🎂 </h1>
+
+    <div class="container-fluid bg-3 text-center">
+      <h3>Steps to test bot</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            <strong>1.</strong> Open up the chat and type any of these greeting
+            - "hi", "hey", "hello", "hola", "namastey", "asalam walekum", "whats
+            up", "yo"
+          </p>
+          <p>
+            <strong>2.</strong> Bot will ask you question - Awesome! Do you want
+            to know how many days are left for you next 🎂 BIG BIRTHDAY ? 🥳 🥳"
+          </p>
+          <p>
+            <strong>3.</strong> If you select Yes then bot will your first name
+            and DOB and is you say no then bot will say you good bye
+          </p>
+          <p>
+            <strong>4.</strong> Now you have to enter your name and DOB
+            (YYYY-MM-DD) in this format eg - "Divam, 1993-08-23"
+          </p>
+          <p>
+            <strong>5.</strong> After this Bot will tell you number of days left
+            till your next BIRTHDAY
+          </p>
+          <p>
+            <strong>6.</strong> When you will tap Thank you then bot will wish you in advance 🤗
+          </p>
+          <p>
+            <strong>7.</strong> Whenever you will type any of these - "no", "not
+            now", "later" the bot will tell you good bye
+          </p>
+          <p>
+            <strong>8.</strong> Whenever you will type any of these - "yes",
+            "yeah", "yup","ya" the bot will ask your name and DOB
+          </p>
+          <p>That's it 🤗</p>
+        </div>
+      </div>
+
+      <h3>Steps to test APIs</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            <strong>1.</strong> Open Postman and try these following link
+          </p>
+          <p>
+            <strong>Get All Messages - </strong> https://messenger-shubham.herokuapp.com/messages
+          </p>
+          <p>
+            <strong>Get Messages By Id - </strong> https://messenger-shubham.herokuapp.com/messages/{PSID} for eg - try this PSID = 102417132472660
+          </p>
+          <p>
+            <strong>Summary - </strong> https://messenger-shubham.herokuapp.com/summary 
+          </p>
+          <p>That's it 🤗</p>
+        </div>
+      </div>
+    </div>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "108559048513927");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v13.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </body>
+</html>
