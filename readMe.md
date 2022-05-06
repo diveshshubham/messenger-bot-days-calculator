@@ -4,7 +4,7 @@
 
 - In this project a facebook messanger app has been integrated which can tell you the number of days for you next upcoming birthday after entering yur name and date of birth. 
 
-- The messages are store in database which can be retrived by it's senderid (PSID)
+- The messages are store in database (MONGO) which can be retrived by it's senderid (PSID)
 - All messages can be retrieved , summarize and can be fethed by sender'Id
 
 CLICK HERE TO CHECKOUT - https://messenger-shubham.herokuapp.com/
