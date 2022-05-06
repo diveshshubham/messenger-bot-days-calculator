@@ -7,8 +7,8 @@
 - The messages are store in database (MONGO) which can be retrived by it's senderid (PSID)
 - All messages can be retrieved , summarize and can be fethed by sender'Id
 
-CLICK HERE TO CHECKOUT - https://messenger-shubham.herokuapp.com/
-CLICK HERE TO WATCHOUT DEMO - https://drive.google.com/file/d/1E-7EnGaWDnorT_qvk53twpf4TLoGt-wx/view?usp=sharing
+- CLICK HERE TO CHECKOUT - https://messenger-shubham.herokuapp.com/
+- CLICK HERE TO WATCHOUT DEMO - https://drive.google.com/file/d/1E-7EnGaWDnorT_qvk53twpf4TLoGt-wx/view?usp=sharing
 
 ## How to Start
 
