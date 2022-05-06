@@ -389,7 +389,7 @@
 
 Authentication Required : No
 
-This endpoint will create a new user
+This endpoint will retrive all messages
 
 ### HTTP Request
 
