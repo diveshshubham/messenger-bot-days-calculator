@@ -1,6 +1,6 @@
 const gretting = ["hi", "hey", "hello", "hola", "namastey", "asalam walekum", "whats up", "yo"]
 const accept = ["yes", "yeah", "yup","ya"]
-const deny = ["no", "not now", "later"]
+const deny = ["no", "not now", "later", "nah"]
 const regex = /[@#$%^&*()_+\=\[\]{};':"\\|.<>\/?1234567890]/g;
 const saveData = require('../services/queryService/queryService')
 const dayCalculator = require('../services/calculator/calculator')
